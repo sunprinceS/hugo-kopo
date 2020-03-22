@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on ~科普小站~</title>
+    <link>https://sunprinces.github.io/hugo-kopo/post/</link>
+    <description>Recent content in Posts on ~科普小站~</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Mar 2020 23:38:53 +0800</lastBuildDate>
+    
+	<atom:link href="https://sunprinces.github.io/hugo-kopo/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://sunprinces.github.io/hugo-kopo/post/hello-world/</link>
+      <pubDate>Sun, 22 Mar 2020 23:38:53 +0800</pubDate>
+      
+      <guid>https://sunprinces.github.io/hugo-kopo/post/hello-world/</guid>
+      <description>大標一: 介紹 大標二: 功能 Bold italic normal 清單 apple banana 發文要附圖 かわいい 寫點 code 1 2 3 import some_package print(f&amp;#34;Hello World&amp;#34;) 寫點數學 $\frac{1}{2} + \frac{1}{2} = 1$ 名人說 國安聞你來，叫你先進場；元大聞你來，造市</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://sunprinces.github.io/hugo-kopo/sitemap.xml
