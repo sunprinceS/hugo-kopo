@@ -2,21 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://sunprinces.github.io/hugo-kopo/post/hello-world/</loc>
-    <lastmod>2020-03-22T23:38:53+08:00</lastmod>
+    <loc>https://sunprinces.github.io/hugo-kopo/post/</loc>
+    <lastmod>2020-04-10T09:35:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://sunprinces.github.io/hugo-kopo/post/</loc>
-    <lastmod>2020-03-22T23:38:53+08:00</lastmod>
+    <loc>https://sunprinces.github.io/hugo-kopo/post/hugo-diy/</loc>
+    <lastmod>2020-04-10T09:35:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://sunprinces.github.io/hugo-kopo/</loc>
+    <lastmod>2020-04-10T09:35:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://sunprinces.github.io/hugo-kopo/post/hello-world/</loc>
     <lastmod>2020-03-22T23:38:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

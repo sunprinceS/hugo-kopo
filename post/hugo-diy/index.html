@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>來做一個自己的網站吧 - 10 分鐘帶你用 Hugo 快速架站 - 科學說人話: 科普寫作</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="TonyHsu" /><meta name="description" content="在我們開始之前&amp;hellip; 為什麼我需要學習做網站呢？ 隨著網路普及程度的倍倍增長，當我們聽到一個新的品牌、新的人事、新的產品，總會反射性地" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.67.1 with theme even" />
+
+
+<link rel="canonical" href="https://sunprinces.github.io/hugo-kopo/post/hugo-diy/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/hugo-kopo/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/hugo-kopo/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/hugo-kopo/favicon-16x16.png">
+<link rel="manifest" href="/hugo-kopo/manifest.json">
+<link rel="mask-icon" href="/hugo-kopo/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/hugo-kopo/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="來做一個自己的網站吧 - 10 分鐘帶你用 Hugo 快速架站" />
+<meta property="og:description" content="在我們開始之前&hellip; 為什麼我需要學習做網站呢？ 隨著網路普及程度的倍倍增長，當我們聽到一個新的品牌、新的人事、新的產品，總會反射性地" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sunprinces.github.io/hugo-kopo/post/hugo-diy/" />
+<meta property="article:published_time" content="2020-04-10T09:35:29+08:00" />
+<meta property="article:modified_time" content="2020-04-10T09:35:29+08:00" />
+<meta itemprop="name" content="來做一個自己的網站吧 - 10 分鐘帶你用 Hugo 快速架站">
+<meta itemprop="description" content="在我們開始之前&hellip; 為什麼我需要學習做網站呢？ 隨著網路普及程度的倍倍增長，當我們聽到一個新的品牌、新的人事、新的產品，總會反射性地">
+<meta itemprop="datePublished" content="2020-04-10T09:35:29&#43;08:00" />
+<meta itemprop="dateModified" content="2020-04-10T09:35:29&#43;08:00" />
+<meta itemprop="wordCount" content="2492">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="來做一個自己的網站吧 - 10 分鐘帶你用 Hugo 快速架站"/>
+<meta name="twitter:description" content="在我們開始之前&hellip; 為什麼我需要學習做網站呢？ 隨著網路普及程度的倍倍增長，當我們聽到一個新的品牌、新的人事、新的產品，總會反射性地"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/hugo-kopo/" class="logo">Even</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/hugo-kopo/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/hugo-kopo/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/hugo-kopo/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/hugo-kopo/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/hugo-kopo/" class="logo">Even</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/hugo-kopo/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/hugo-kopo/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/hugo-kopo/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/hugo-kopo/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">來做一個自己的網站吧 - 10 分鐘帶你用 Hugo 快速架站</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-04-10 </span>
+        
+          <span class="more-meta"> 2492 words </span>
+          <span class="more-meta"> 5 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#在我們開始之前">在我們開始之前&hellip;</a>
+      <ul>
+        <li><a href="#為什麼我需要學習做網站呢">為什麼我需要學習做網站呢？</a></li>
+        <li><a href="#為什麼我需要用-hugo-來做網站">為什麼我需要用 Hugo 來做網站？</a></li>
+      </ul>
+    </li>
+    <li><a href="#前置作業">前置作業</a></li>
+    <li><a href="#建構網站">建構網站</a></li>
+    <li><a href="#撰寫文章">撰寫文章</a></li>
+    <li><a href="#網站部署">網站部署</a></li>
+    <li><a href="#結語">結語</a></li>
+    <li><a href="#附錄">附錄</a>
+      <ul>
+        <li><a href="#手把手影片教學">手把手影片教學</a></li>
+        <li><a href="#參考資料">參考資料</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="在我們開始之前">在我們開始之前&hellip;</h2>
+<h3 id="為什麼我需要學習做網站呢">為什麼我需要學習做網站呢？</h3>
+<p>隨著網路普及程度的倍倍增長，當我們聽到一個新的品牌、新的人事、新的產品，總會反射性地先拿起手機 google，想在網路的大海中，找尋關於這個新名詞的蛛絲馬跡。這時如果有個好的門面，往往能先留下好的第一印象。學會這項技能，求職者可以拿來做個人履歷、攝影師可以拿來當 portfolio，PM 可以拿來讓最新研發的產品被更多人看見&hellip;而許多熱心開發者的貢獻，更讓一般靜態網站開發的門檻降至 10 分鐘可上手的程度 (如同這篇文章的標題)，如此快速上手又益處無窮的技能，怎麼不學呢？😃</p>
+<p><img src="https://upload.cc/i1/2020/04/10/T6mpMI.png" alt="Hugo-intro" title="Hugo 介紹"></p>
+<h3 id="為什麼我需要用-hugo-來做網站">為什麼我需要用 Hugo 來做網站？</h3>
+<p>一個網站的構成，分為 html, css, javascript 三部份，其中 html 負責網站的架構編排，css 負責網站的風格(如顏色，大標字體應該多大&hellip;)，javascript 則負責管理網站的內容，以及使用者的操作行為。學習這三項東西往往讓不少人打退堂鼓；而坊間大家常用的 wordpress, Blogger, Medium 雖然不需要碰觸這些底層知識，卻犧牲了客製化
+的方便(舉例來說，想在 Medium 貼上數學式是不可能的)。</p>
+<p>而今天要介紹的 Hugo ，定位是靜態網頁生成器 (<em>static site generator</em>)，所謂靜態指的是使用者不會傳資料到開發者這邊 (像是提供帳密登入功能)，單純為了呈現某樣東西而生的網站，稱為靜態網站。我們可以透由簡單易讀的語法 (如 Markdown) 來讓這個工具幫我們自動生成上一段提到的 html ，並且保有客製化的自由，而前人也寫好了許多功能 (像是標籤管理、字數統計&hellip;等)，算是集一般部落格的方便上手，與自幹的彈性於一身，並且可以託管在如 github page 等免費的網頁平台上，維護起來可說是十分方便！</p>
+<p>讓我們開始吧！</p>
+<hr>
+<h2 id="前置作業">前置作業</h2>
+<ul>
+<li>終端機: 用來對電腦下指令的程式，每個作業系統都有內建 <!-- raw HTML omitted -->
+(Windows -&gt; PowerShell, MacOS -&gt; iTerm)</li>
+<li>文字編輯器 (像是 vim, sublime, 一般的文字記事本也是可以的)</li>
+<li>hugo: 本篇教學使用的靜態網頁生成工具，<a href="https://gohugo.io/getting-started/installing/">一鍵安裝</a></li>
+<li>git: 分佈式版本控制系統，用來追蹤網站的版本紀錄及部署，<a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">安裝教學</a></li>
+<li>註冊一個 <a href="https://github.com/">GitHub</a> 帳號， GitHub 為我們要託管網站的平台，也是 git 的雲端</li>
+</ul>
+<hr>
+<h2 id="建構網站">建構網站</h2>
+<p>完成這個段落後，我們可以在自己的電腦上運行網站，並做一些基本的客製化</p>
+<ol>
+<li>首先，先在終端機輸入以下指令建立網站的骨幹，並切換工作目錄至創好的資料夾</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site <span class="o">[</span>資料夾名稱<span class="o">]</span>
+<span class="nb">cd</span> <span class="o">[</span>資料夾名稱<span class="o">]</span> <span class="c1"># 進到該資料夾</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>為網站選一個漂亮的門面， Hugo 官網提供了許多熱心開發者提供的<a href="https://themes.gohugo.io/">免費主題</a></li>
+</ol>
+<!-- raw HTML omitted -->
+<ol start="3">
+<li>選擇喜歡的主題後 (我選了 <a href="https://themes.gohugo.io/hugo-theme-even/">Even</a>)
+，參照主題下方的 Installation 指示將主題給抓下來</li>
+</ol>
+<p><img src="https://upload.cc/i1/2020/04/10/YN5VTb.png" alt="Even-installation" title="Even Installation"></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+</code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>安裝指示下的<strong>Note</strong>欄位，會告訴我們一些使用該主題的注意事項。以 Even 這個主題為例，我們要將 <code>config.toml</code> 這個檔案複製到存放網站骨幹的資料夾下(也就是我們剛剛創的資料夾)</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">cp themes/even/config.toml . <span class="c1"># copy config.toml to current directory</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="5">
+<li><code>config.toml</code> 是一個特殊的檔案，他定義了網站的各個參數 (如網站的標題，作者的favicon, 社交連結, 是否要 enable 某些特殊功能&hellip;等)，通常各個欄位後頭也都會解釋該參數的用途，我們可以視需求更改</li>
+</ol>
+<p><img src="https://upload.cc/i1/2020/04/10/SeXAFd.png" alt="Customize-config" title="Simple Customization"></p>
+<p>完成了以上步驟後，我們已經有了一個網站雛型，可以用以下指令在 <code>http://localhost:1313/</code> 查看網站</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">hugo server -D
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>注意</strong>: <code>http://localhost:1313/</code> 這個網址其實是我們在 <code>config.toml</code> 的<code>baseURL</code> 欄位所定義的 (上圖中的第一行)，<code>localhost</code>是一個特殊的網址，只能在自己的電腦上查看</p>
+<hr>
+<h2 id="撰寫文章">撰寫文章</h2>
+<p>接著，我們要在網站上添加一些內容，並利用容易上手的 <strong>markdown</strong> 語法來生成 html。<br>
+本篇教學以建構分享科普文章的網站做為例子，可以簡便地放上數學方程式及有 highlighting 的程式碼。</p>
+<p>首先，利用以下指令創建一篇新的文章</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">hugo new post/<span class="o">[</span>文章名稱<span class="o">]</span>.md
+</code></pre></td></tr></table>
+</div>
+</div><p>下一步則是編輯文章，打開<code>content/post/[文章名稱].md</code> 做編輯 (這裡我取名叫Hello-world)</p>
+<p><img src="https://upload.cc/i1/2020/04/10/l4hwLi.png" alt="Post-init" title="一開始空空如也"></p>
+<p>而 md 這個副檔名表示為 markdown ，可以用它的語法來寫文章 (<a href="https://markdown.tw/">markdown語法教學</a>)
+這裡簡略地提幾個較為常用的</p>
+<ul>
+<li># : 標題相關</li>
+<li>* : 粗體、斜體、列表</li>
+<li>&gt; : 引用</li>
+<li>$ : 數學式</li>
+<li>` : 程式碼 highlightling</li>
+</ul>
+<p>舉<a href="http://localhost:1313/hugo-kopo/post/hello-world/">這篇文章</a>為例，下圖展示了 markdown (下)與其生成的 html (上) 的差別，有沒有覺得markdown 簡單好讀非常多呢？😆</p>
+<p><img src="https://upload.cc/i1/2020/04/10/uckIaF.png" alt="Comarison-md-html" title="markdown vs html 大比較！"></p>
+<p>完成編輯，並確認文章顯示符合我們心中所想後，把 <code>draft</code> 設成 <code>false</code>，如下圖</p>
+<p><img src="https://upload.cc/i1/2020/04/10/t4ecVR.png" alt="Undraft" title="Undraft"></p>
+<hr>
+<h2 id="網站部署">網站部署</h2>
+<p>到目前為止，我們已經有了網站的雛型，也知道了怎麼新增內容，最後一步便是將自己的作品放到網路上供大家瀏覽啦！這裡我們選用 GitHub 作為託管的平台 ~</p>
+<ol>
+<li>在 GitHub 上創建新的 Repository ，如下圖</li>
+</ol>
+<p><img src="https://upload.cc/i1/2020/04/10/mCWRXH.png" alt="Create-repo" title="創建新的 Repository"></p>
+<ol start="2">
+<li>再來會看到 GitHub 請我們輸入的一串指令，這個指令是用來建立我們的電腦和這個平台的接口，用終端機輸入這串指令</li>
+</ol>
+<p><img src="https://upload.cc/i1/2020/04/10/YmGQOX.png" alt="GitHub-init" title="建立與 GitHub 間的接口"></p>
+<ol start="3">
+<li>接下來的步驟為利用 git 開分支 (<em>branch</em>) 的功能，幫助我們分開管理 markdown 及 config 和生成的 html。
+如下圖，我們將 markdown 及 config 交由 <code>master</code> 分支管理，生成的 html 與網頁呈現相關的檔案則由 <code>gh-pages</code> 管理</li>
+</ol>
+<p><img src="https://upload.cc/i1/2020/04/10/VkFxbJ.png" alt="Git-branch" title="開不同分支管理網站"></p>
+<p><strong>注意</strong>: 放在 <code>gh-pages</code> 上的檔案會被 GitHub 默認為要託管至其上的網站相關檔案</p>
+<p>因為利用到 git 較為複雜的功能，這個步驟為整篇教學中最困難的部份，但只要照著以下指令輸入便可以輕鬆完成</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"> <span class="c1"># gh-pages 和 master 是完全獨立的兩分支</span>
+ git checkout --orphan gh-pages
+ git reset --hard
+ git commit --allow-empty -m <span class="s2">&#34;Initializing gh-pages branch&#34;</span>
+ git push origin gh-pages
+ git checkout master
+
+ <span class="c1"># publishdir 為用來存放 html 的資料夾 (名稱可以自訂，以下我用 public)，由 gh-pages 分支管理</span>
+ git worktree add -B gh-pages <span class="o">[</span>publishdir<span class="o">]</span> origin/gh-pages 
+</code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>
+<p>在<a href="https://sunprinces.github.io/hugo-kopo/post/hugo-diy/#%E5%BB%BA%E6%A7%8B%E7%B6%B2%E7%AB%99">建構網站</a>的段落曾提到，<code>baseURL</code> 為網站的網址，之前因為我們只在自己的電腦上查看，所以用 <code>localhost</code>，但現在我們要將網站託管至 GitHub，因此需要改成 GitHub 提供給我們的網址 (<code>https://[GitHub用戶名字].github.io/[Repository名字]</code>)</p>
+</li>
+<li>
+<p>最後一步則是利用 hugo 幫我們把 markdown 生成 html，並上傳到 GitHub</p>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">hugo <span class="c1"># 生成 html</span>
+<span class="nb">cd</span> public <span class="c1"># 進到放 html 的資料夾</span>
+git add --all <span class="c1"># 把所有檔案加進來</span>
+git commit -m <span class="s2">&#34;My first website 🙌&#34;</span>
+git push origin gh-pages <span class="c1"># 將更新推至 GitHub</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>大功告成！我們可以到 <code>https://[GitHub用戶名字].github.io/[Repository名字]</code> 查看我們的心血結晶了！😄</p>
+<h2 id="結語">結語</h2>
+<p>在這篇文章中，我們利用 Hugo 幫我們快速建立了靜態網站，有興趣的讀者，可以到每個主題的官網，去看如何做更細部的客製化。雖然無可避免地要開始跟 html, css, javascript 這網頁三大元素打交道，但只要會 google ，幾乎都可以找到解答，又因為我們已經有了一個雛型供我們做修改，學習到的新技巧可以很快地呈現出來，學習回饋來的即時，也比較不會澆熄學習熱忱！</p>
+<p>值得一提的是，這篇文章也是用一樣的方法做出來的喔！</p>
+<h2 id="附錄">附錄</h2>
+<h3 id="手把手影片教學">手把手影片教學</h3>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube-nocookie.com/embed/GrL5-vOGLX0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="參考資料">參考資料</h3>
+<ul>
+<li><a href="https://gohugo.io/getting-started/quick-start/">Hugo 官網安裝教學</a>, <a href="https://gohugo.io/getting-started/quick-start/">https://gohugo.io/getting-started/quick-start/</a></li>
+<li><a href="https://markdown.tw/">Markdown 官網語法教學</a>， <a href="https://markdown.tw/">https://markdown.tw/</a></li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">TonyHsu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2020-04-10
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        <a class="next" href="/hugo-kopo/post/hello-world/">
+            <span class="next-text nav-default">Hello World</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:r07921053@ntu.edu.tw" class="iconfont icon-email" title="email"></a>
+      <a href="https://twitter.com/sunprinceS_0822" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://sunprincelife.wordpress.com/" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="https://sunprinces.github.io/photography/" class="iconfont icon-instagram" title="instagram"></a>
+  <a href="https://sunprinces.github.io/hugo-kopo/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">TonyHsu</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/hugo-kopo/dist/even.26188efa.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
